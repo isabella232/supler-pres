@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Supler demo</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/datepicker3.standalone.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv.min.js"></script>
+    <script src="lib/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body role="document">
+
+<div class="container theme-showcase" role="main">
+    <div class="jumbotron">
+        <h1>Supler demo</h1>
+        <div id="form-container">
+            <div supler:fieldTemplate supler:fieldPath="height">
+                <div class="form-group">
+                    <i>{{suplerLabel}} <span style="font-size: xx-small">(custom template)</span></i>
+                    {{suplerInput}}
+                    {{suplerValidation}}
+                </div>
+            </div>
+        </div>
+        <p id="feedback"></p>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="lib/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/bootstrap-datepicker.min.js"></script>
+
+<!-- Supler -->
+<script src="lib/supler.js"></script>
+<script src="step3.js"></script>
+</body>
+</html>
