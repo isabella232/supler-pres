@@ -1,4 +1,4 @@
-package com.softwaremill.demo.complete
+package com.softwaremill.demo.step3
 
 import akka.actor.ActorSystem
 import org.json4s.JsonAST.{JString, JValue}
@@ -9,13 +9,17 @@ import spray.http.StatusCodes._
 import spray.httpx.Json4sSupport
 import spray.routing.{Route, SimpleRoutingApp}
 
-object ServerComplete extends App with Json4sSupport with SimpleRoutingApp {
+/**
+ * - subform
+ * - jsons
+ */
+object ServerStep3 extends App with Json4sSupport with SimpleRoutingApp {
 
   implicit val actorSystem = ActorSystem()
   implicit val json4sFormats = org.json4s.DefaultFormats
 
-  import com.softwaremill.demo.complete.Forms._
-  import com.softwaremill.demo.complete.Instances._
+  import com.softwaremill.demo.step3.Forms._
+  import com.softwaremill.demo.step3.Instances._
 
   var troll = aTroll
 
@@ -48,7 +52,7 @@ object ServerComplete extends App with Json4sSupport with SimpleRoutingApp {
       getFromResourceDirectory("")
     } ~
     path("") {
-      redirect("/site/complete.html", Found)
+      redirect("/site/index.html", Found)
     }
   }
 
