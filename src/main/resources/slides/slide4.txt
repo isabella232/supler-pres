@@ -1,0 +1,9 @@
+Supler - what is it not?
+
+* web/front-end/persistence/... framework
+
+* end-to-end solution
+
+* doesn't handle backing object lifecycle
+* doesn't handle client-server communication
+* ...

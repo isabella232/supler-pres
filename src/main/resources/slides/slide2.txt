@@ -1,0 +1,7 @@
+Supler - what is it?
+
+* *library* which makes writing complex forms easier
+
+* Scala DSL for defining forms
+
+* Javascript form renderer

@@ -1,0 +1,16 @@
+The Supler philosophy
+
+* separate backend & frontend applications
+* communicating via JSON objects
+
+Backend: form def applied to an object --> serialized to JSON
+
+== network ==>
+
+Frontend: form rendered --> changes --> validation --> form serialized to JSON
+
+== network ==>
+
+Backend: changes applied --> validations/actions --> changed form sent back
+
+...
