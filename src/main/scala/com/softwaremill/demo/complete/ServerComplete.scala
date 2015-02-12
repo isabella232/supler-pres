@@ -14,7 +14,7 @@ object ServerComplete extends App with Json4sSupport with SimpleRoutingApp {
   implicit val actorSystem = ActorSystem()
   implicit val json4sFormats = org.json4s.DefaultFormats
 
-  import com.softwaremill.demo.complete.forms2._
+  import com.softwaremill.demo.complete.Forms._
   import com.softwaremill.demo.complete.Instances._
 
   var troll = aTroll

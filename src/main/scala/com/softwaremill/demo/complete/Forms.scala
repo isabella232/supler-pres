@@ -3,7 +3,7 @@ package com.softwaremill.demo.complete
 import org.supler.Supler._
 import org.supler.field.ActionResult
 
-object forms2 {
+object Forms {
   val mountainForm = form[Mountain](f => List(
     f.field(_.name).label("Name"),
     f.field(_.height).label("Height (meters)").validate(gt(0), le(8848)),
