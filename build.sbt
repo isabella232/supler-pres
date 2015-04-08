@@ -9,7 +9,7 @@ scalaVersion := "2.11.5"
 val sprayVersion  = "1.3.1"
 
 libraryDependencies ++= Seq(
-  "com.softwaremill" %% "supler" % "0.2.0",
+  "com.softwaremill.supler" %% "supler" % "0.3.0",
   // spray/akka
   "com.typesafe.akka" %% "akka-actor" % "2.3.4",
   "io.spray" %% "spray-can" % sprayVersion,

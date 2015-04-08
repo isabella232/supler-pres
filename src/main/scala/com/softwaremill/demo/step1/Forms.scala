@@ -9,6 +9,6 @@ object Forms {
     f.field(_.firstName).label("First name"),
     heightField,
     f.field(_.bio).label("Bio"),
-    f.field(_.gender).label("Gender").possibleValues(_ => List("male", "female"))
+    f.selectOneField(_.gender)(identity).possibleValues(_ => List("male", "female")).label("Gender")
   ))
 }

@@ -1,5 +1,5 @@
 var formContainer = document.getElementById('form-container');
-var form = new SuplerForm(formContainer, {});
+var form = new Supler.Form(formContainer, {});
 
 $(document).ready(function() {
     $.get('/rest/form1.json', function(data) {

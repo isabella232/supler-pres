@@ -11,6 +11,6 @@ object Forms {
     heightField,
     f.action("grow") { t => ActionResult(t.copy(height = t.height + 10)) }.label("Grow"),
     f.field(_.bio).label("Bio"),
-    f.field(_.gender).label("Gender").possibleValues(_ => List("male", "female")).renderHint(asRadio())
+    f.selectOneField(_.gender)(identity).possibleValues(_ => List("male", "female")).label("Gender").renderHint(asRadio())
   ))
 }
