@@ -5,13 +5,15 @@ var form = new Supler.Form(formContainer, {
 
 $(document).ready(function() {
     $.get('/rest/form1.json', function(data) {
-        $('#json-server').html(JSON.stringify(data));
+        $('#json-server-code').html(JSON.stringify(data, null, 2));
+        hljs.initHighlighting();
         form.render(data);
     });
 });
 
 function sendForm(formValue, renderResponseFn, sendErrorFn) {
-    $('#json-client').html(JSON.stringify(formValue));
+    $('#json-client-code').html(JSON.stringify(formValue, null, 2));
+    hljs.initHighlighting();
     $.ajax({
         url: '/rest/form1.json',
         type: 'POST',
