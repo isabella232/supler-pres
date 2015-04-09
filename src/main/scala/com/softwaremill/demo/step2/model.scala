@@ -1,4 +1,4 @@
-package com.softwaremill.demo.step3
+package com.softwaremill.demo.step2
 
 case class Troll(firstName: String, height: Int, bio: Option[String], gender: String,
   likesMountains: List[Mountain])

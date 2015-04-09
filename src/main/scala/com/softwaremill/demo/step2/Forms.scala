@@ -1,4 +1,4 @@
-package com.softwaremill.demo.step3
+package com.softwaremill.demo.step2
 
 import org.supler.Supler._
 import org.supler.field.ActionResult

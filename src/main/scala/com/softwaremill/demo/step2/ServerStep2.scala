@@ -1,4 +1,4 @@
-package com.softwaremill.demo.step3
+package com.softwaremill.demo.step2
 
 import akka.actor.ActorSystem
 import org.json4s.JsonAST.{JString, JValue}
@@ -13,13 +13,13 @@ import spray.routing.{Route, SimpleRoutingApp}
  * - subform
  * - jsons
  */
-object ServerStep3 extends App with Json4sSupport with SimpleRoutingApp {
+object ServerStep2 extends App with Json4sSupport with SimpleRoutingApp {
 
   implicit val actorSystem = ActorSystem()
   implicit val json4sFormats = org.json4s.DefaultFormats
 
-  import com.softwaremill.demo.step3.Forms._
-  import com.softwaremill.demo.step3.Instances._
+  import com.softwaremill.demo.step2.Forms._
+  import com.softwaremill.demo.step2.Instances._
 
   var troll = aTroll
 
