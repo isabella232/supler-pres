@@ -13,8 +13,6 @@
          * http://www.codebrag.com/
                                             *ScalaTimes*:
 
-   *Scalar conference*                      * Weekly Scala Newsletter
+                                            * Weekly Scala Newsletter
                                             * http://www.scalatimes.com/
-   * 11th April 2015, free                  * @scalatimes
-   * http://scalar-conf.com
-   * Warsaw, Poland
+                                            * @scalatimes

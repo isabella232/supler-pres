@@ -1,6 +1,6 @@
 Supler - what is it?
 
-* *library* which makes writing complex forms easier
+* Rapid Form Development *library* which makes writing complex forms easier
 
 * Scala DSL for defining forms
 

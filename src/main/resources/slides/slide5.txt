@@ -1,9 +1,9 @@
-About me
+About us
 
-* coder @ [SoftwareMill](http://www.softwaremill.com)
+* coders @ [SoftwareMill](http://www.softwaremill.com)
 
 * open-source: Supler, MacWire, Envers, ElasticMQ, Veripacks
 
-* [blog](http://www.warski.org)
+* [blog](http://www.warski.org) & [blog](http://www.szimano.org)
 
-* [twitter](@adamwarski)
+* [twitter](@adamwarski) & [twitter](@szimano)

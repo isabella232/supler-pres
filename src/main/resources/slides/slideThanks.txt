@@ -17,6 +17,4 @@
 
 * http://docs.supler.io
 
-* http://www.warski.org
-
-* @adamwarski
+* @adamwarski / @szimano

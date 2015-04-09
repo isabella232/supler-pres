@@ -11,7 +11,7 @@ object Server extends App with Json4sSupport with SimpleRoutingApp {
   implicit val actorSystem = ActorSystem()
   implicit val json4sFormats = org.json4s.DefaultFormats
 
-  def getJson(route: Route) = get { respondWithMediaType(MediaTypes.`application/json`) { route } }
+  def getJson(route: Route) = get {  respondWithMediaType(MediaTypes.`application/json`) { route } }
 
   startServer(interface = "localhost", port = 8080) {
     pathPrefix("site") {
