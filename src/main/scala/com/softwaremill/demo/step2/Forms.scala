@@ -5,7 +5,7 @@ import org.supler.Supler._
 import org.supler.field.ActionResult
 
 object Forms {
-  val customValidator = custom[Troll, Int]((v, m) => v != 129, (v, m) => Message("Cannot be 129"))
+  val customValidator = custom[Troll, Int]((v, t) => v != 129, (v, t) => Message("Cannot be 129"))
 
   val heightField = field[Troll, Int](_.height).label("label_troll_height").validate(ge(0), lt(1000), customValidator)
 

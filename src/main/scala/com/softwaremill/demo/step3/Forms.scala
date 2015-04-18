@@ -5,7 +5,7 @@ import org.supler.Supler._
 import org.supler.field.ActionResult
 
 object Forms {
-  val customValidator = custom[Troll, Int]((v, m) => v != 129, (v, m) => Message("Cannot be 129"))
+  val customValidator = custom[Troll, Int]((v, t) => v != 129, (v, t) => Message("Cannot be 129"))
 
   def mountainForm(deleteAction: Mountain => ActionResult[Mountain]) = form[Mountain](f => List(
     f.field(_.name).label("Name"),
