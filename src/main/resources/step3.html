@@ -26,7 +26,13 @@
     <div class="jumbotron">
         <h1>Supler demo</h1>
         <div id="form-container">
-
+            <div supler:fieldTemplate supler:fieldPath="firstName">
+                <div class="form-group col-md-6">
+                    <i>{{suplerLabel}} <span style="font-size: xx-small">(custom template)</span></i>
+                    {{suplerInput}}
+                    {{suplerValidation}}
+                </div>
+            </div>
         </div>
         <p id="feedback"></p>
 
@@ -52,6 +58,6 @@
 
 <!-- Supler -->
 <script src="lib/supler.js"></script>
-<script src="step2.js"></script>
+<script src="step3.js"></script>
 </body>
 </html>

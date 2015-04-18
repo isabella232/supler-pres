@@ -1,6 +1,9 @@
 var formContainer = document.getElementById('form-container');
 var form = new Supler.Form(formContainer, {
     send_form_function: sendForm,
+    i18n: {
+        label_troll_height: "Height (cm)"
+    },
     custom_data_handler: function(data) {
         feedback.html(data);
         feedback.show();

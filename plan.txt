@@ -1,0 +1,27 @@
+step1:
+- basic form definition
+  - text field
+  - number field + validations
+  - dropdown
+  - optional field
+- getting the form (GET on server)
+- displaying on the frontend
+- basic validation (client side - no communication with server!)
+
+step2 (show as much as possible, time allowing):
+- actions (grow - no validation/save - validation), add fields to forms (save)
+- frontend processing
+- stand-alone field (height) - immutability, reuse, etc.
+- custom validations (height)
+- render hints
+- custom data handling (action result)
+
+step3 (show prepared):
+- subforms
+- dependent dropdowns
+- add/remove subform, parent actions
+- render as list/table
+- layout horizontal/vertical
+- i18n
+- templates
+- refactor
