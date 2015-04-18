@@ -10,7 +10,7 @@ step1:
 
 step2 (show as much as possible, time allowing):
 - actions (grow - no validation/save - validation), add fields to forms (save)
-- frontend processing
+- frontend processing (POST on the server)
 - stand-alone field (height) - immutability, reuse, etc.
 - custom validations (height)
 - render hints
