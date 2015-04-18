@@ -9,8 +9,7 @@ var form = new Supler.Form(formContainer, {
 
 $(document).ready(function() {
     $.get('/rest/form1.json', function(data) {
-        $('#json-server-code').html(JSON.stringify(data, null, 2));
-        hljs.initHighlighting();
+        showServerJson(data);
         form.render(data);
     });
 });
@@ -19,8 +18,7 @@ var feedback = $('#feedback');
 feedback.hide();
 
 function sendForm(formValue, renderResponseFn, sendErrorFn) {
-    $('#json-client-code').html(JSON.stringify(formValue, null, 2));
-    hljs.initHighlighting();
+    showClientJson(formValue);
     $.ajax({
         url: '/rest/form1.json',
         type: 'POST',
